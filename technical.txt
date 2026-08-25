@@ -1,0 +1,469 @@
+PROFESSIONAL PROFILE
+
+Marco Parisi is a software engineer with a professional background spanning performance testing, software development, RPA, IT support, and technical tutoring.
+
+His experience combines software engineering, performance engineering, automation, API testing, data manipulation, database interaction, and enterprise application development.
+
+Marco currently works as a Senior Performance Tester / Performance Engineer in a consulting environment, with experience working on enterprise applications in the banking sector.
+
+He has also previously worked as an RPA Developer for an enterprise management software company and as an IT & Electronics Technician / Private Tutor.
+
+His professional interests include software engineering, automation, performance engineering, data, emerging technologies, and continuous technical learning.
+
+
+CURRENT ROLE
+
+Senior Performance Tester / Performance Engineer
+Consulting environment — Banking sector
+
+Marco currently works as a Senior Performance Tester, focusing on performance testing and analysis for enterprise applications.
+
+His responsibilities include:
+
+- Independently managing the full lifecycle of performance testing projects.
+- Estimating the effort required for performance testing activities.
+- Contributing to final results analysis and performance reporting.
+- Coordinating technical alignment with international teams and stakeholders.
+- Working with teams and stakeholders from different countries and technical backgrounds.
+- Developing custom scripts for API interaction.
+- Extracting and manipulating data programmatically.
+- Working with Java, C, and JavaScript for technical scripting and automation.
+- Implementing reusable libraries for handling complex data structures.
+- Supporting complex performance-testing workflows and technical analysis.
+- Investigating unexpected technical results and performance-related issues.
+- Working in an enterprise banking environment where reliability, scalability, and performance are important considerations.
+
+
+PERFORMANCE TESTING
+
+Marco has professional experience in performance testing and performance engineering.
+
+Relevant areas include:
+
+- Performance testing
+- Performance test planning
+- Performance test execution
+- Performance test lifecycle management
+- Performance analysis
+- Performance results analysis
+- Performance reporting
+- Test effort estimation
+- API interaction during performance testing
+- Data extraction and manipulation
+- Custom scripting
+- Handling complex data structures
+- Investigation of unexpected results
+- Technical coordination with international teams
+- Enterprise application performance
+
+
+PROGRAMMING LANGUAGES
+
+Marco has experience with the following programming languages:
+
+- Java
+- C
+- JavaScript
+- SQL
+
+Java, C, and JavaScript have been used in his professional performance-testing work for scripting, API interaction, data extraction, and technical automation.
+
+
+
+
+API AND DATA
+
+Marco has experience working with APIs and data as part of his professional activities.
+
+Relevant experience includes:
+
+- API interaction
+- API-oriented scripting
+- Data extraction
+- Data manipulation
+- Programmatic processing of data
+- Working with complex data structures
+
+
+
+His experience involves using programming and scripting to interact with enterprise systems and process technical data.
+
+
+DATABASES
+
+Marco has experience with relational databases and database-backed applications.
+
+Relevant technologies include:
+
+- SQL
+- MySQL
+
+During his previous RPA development experience, he worked with applications involving MySQL databases and backend logic.
+
+
+WEB DEVELOPMENT
+
+Marco brings a solid foundation in web technologies and development, complemented by university-level training in full-stack web development. His technical expertise spans core frontend and backend technologies, including HTML, CSS, JavaScript, and PHP.
+
+Relevant technologies include:
+
+- HTML
+- CSS
+- JavaScript
+- PHP
+- WordPress
+
+
+
+
+RPA AND AUTOMATION WITH APPIAN
+
+Marco has professional experience as an RPA Developer.
+
+In this role, he worked on automation-oriented solutions and enterprise applications.
+
+Relevant experience includes:
+
+- RPA development
+- Business process automation
+- Enterprise application automation
+- Backend interaction
+- Database interaction
+- MySQL
+- Appian
+- Dynamic interfaces
+- Full-stack application components
+- Integration between application components
+- Complex business logic
+
+
+Marco has professional experience working with Appian.
+
+His experience includes working with enterprise applications and automation-oriented solutions involving the Appian platform.
+
+This included working with application interfaces, business logic, data, and backend components.
+
+
+PREVIOUS EXPERIENCE
+
+RPA Developer
+Enterprise Management Software Company
+
+Marco previously worked as an RPA Developer for an enterprise management software company.
+
+During this role, he:
+
+- Designed dynamic and full-stack interfaces.
+- Worked on application frontends and backend components.
+- Worked with MySQL databases.
+- Built enterprise applications combining user interfaces with complex business logic.
+- Worked with Appian.
+- Developed solutions involving automation and enterprise application workflows.
+
+This experience helped him develop a broader understanding of software applications beyond testing, including application development, backend logic, databases, interfaces, and automation.
+
+
+IT & ELECTRONICS TECHNICIAN / PRIVATE TUTOR
+
+Marco also has previous experience as an IT & Electronics Technician and private tutor.
+
+His responsibilities included:
+
+- Providing technical tutoring to university and technical institute students.
+- Supporting students in IT-related subjects.
+- Providing IT and electronics technical support.
+- Troubleshooting technical issues.
+- Explaining technical concepts to students with different levels of knowledge.
+
+This experience contributed to his communication, troubleshooting, and technical problem-solving skills.
+
+
+TECHNICAL SKILLS
+
+Programming:
+- Java
+- C
+- JavaScript
+- PHP
+- SQL
+
+Web technologies:
+- HTML
+- CSS
+- JavaScript
+- PHP
+- WordPress
+
+Testing and performance:
+- Performance testing
+- Performance engineering
+- Performance analysis
+- Performance reporting
+- Performance test planning
+- API testing / API interaction
+- Test scripting
+- Data extraction
+- Data manipulation
+
+Databases:
+- SQL
+- MySQL
+
+Automation and enterprise platforms:
+- RPA
+- Appian
+
+Other technical areas:
+- Enterprise applications
+- Backend development
+- Frontend development
+- Full-stack application components
+- Business logic
+- API interaction
+- Data processing
+- Complex data structures
+- Technical troubleshooting
+
+
+SOFTWARE ENGINEERING PROFILE
+
+Although Marco's current professional role is focused on performance testing and performance engineering, his overall technical background is broader than testing alone.
+
+His previous RPA development experience gave him exposure to:
+
+- Frontend development
+- Backend development
+- Database interaction
+- Application architecture
+- Business logic
+- Enterprise applications
+- Automation
+- RPA
+- Appian
+- MySQL
+
+His current performance-engineering experience adds:
+
+- Performance testing
+- Performance analysis
+- API interaction
+- Technical scripting
+- Data manipulation
+- Test lifecycle management
+- Enterprise-scale systems
+- International technical collaboration
+
+This combination gives Marco a multidisciplinary understanding of software systems, from application development and automation to testing and performance analysis.
+
+
+PROBLEM SOLVING
+
+Marco's professional experience involves solving technical problems across different areas.
+
+Examples include:
+
+- Investigating unexpected performance-test results.
+- Developing custom scripts when standard testing functionality is not sufficient.
+- Extracting and manipulating data programmatically.
+- Handling complex data structures.
+- Working with APIs.
+- Working with database-backed applications.
+- Troubleshooting IT and technical issues.
+- Understanding application behavior from both a development and testing perspective.
+
+
+COLLABORATION
+
+Marco has experience collaborating with international teams and stakeholders.
+
+His current role involves technical coordination with people from different countries and technical backgrounds.
+
+He has worked with stakeholders connected to countries including:
+
+- Italy
+- Germany
+- Spain
+- Romania
+- Slovakia
+
+This experience has helped him develop communication and collaboration skills in international technical environments.
+
+
+LANGUAGES
+
+- Italian — Native
+- English — B2
+
+
+The CV specifically indicates English at B2 level.
+
+
+EDUCATION
+
+Bachelor’s Degree in Computer Engineering
+eCampus University | 2023–2024
+• Degree completed 
+
+Undergraduate Coursework in Computer Engineering
+University of Catania | 2020–2023
+• Completed major coursework (170+ ECTS / credits) toward Bachelor’s Degree (Two uncompleted courses)
+• Transferred credits to eCampus University
+
+Marco has an academic background spanning computer engineering and computer and automation engineering.
+
+
+CONTINUOUS LEARNING
+
+Marco places significant importance on continuous learning.
+
+He regularly follows paid technical courses when he has free time, particularly courses that allow him to:
+
+- Explore new technologies.
+- Experiment with new tools.
+- Build practical knowledge.
+- Test technologies through hands-on experimentation.
+- Expand his software engineering knowledge.
+
+He enjoys learning by experimenting and building things rather than limiting his learning to theoretical study.
+
+He is particularly interested in emerging technologies and continuously expanding his technical skill set.
+
+
+DATA AND FINANCE INTERESTS
+
+Marco has a strong personal interest in finance and investing.
+
+He enjoys learning more about financial markets, investing, and related topics.
+
+He is also interested in data and technology, and enjoys exploring the intersection between technical knowledge, data, and real-world applications.
+
+
+CAREER INTERESTS
+
+Marco is interested in opportunities that allow him to continue growing as a software engineer and technical professional.
+
+
+Marco is particularly attracted to technically challenging environments where he can solve complex problems, learn new technologies, and work on meaningful software systems.
+
+When discussing potential career opportunities, the digital twin should not claim that Marco is actively looking for a specific position unless this information is explicitly provided elsewhere.
+
+
+PROFESSIONAL STRENGTHS
+
+Based on Marco's professional experience, relevant strengths include:
+
+- Analytical thinking
+- Technical problem solving
+- Continuous learning
+- Attention to detail
+- Ability to work with complex technical systems
+- Adaptability across different technical domains
+- Communication with technical and non-technical stakeholders
+- International collaboration
+- Ability to learn new technologies independently
+- Practical and hands-on approach to technology
+- Experience across development, automation, testing, and performance
+
+
+WHAT MAKES MARCO'S PROFILE INTERESTING
+
+Marco has a multidisciplinary technical background.
+
+Rather than being focused exclusively on one area of software engineering, his experience covers several connected areas:
+
+Software development
+→ RPA and automation
+→ Enterprise applications
+→ Databases
+→ APIs
+→ Performance testing
+→ Performance engineering
+→ Data manipulation
+→ Technical analysis
+
+This allows him to understand software systems from multiple perspectives.
+
+His development background helps him understand how applications are built.
+
+His RPA experience gives him experience with automation and enterprise workflows.
+
+His current performance-engineering role gives him experience understanding how applications behave under load and how to investigate performance-related problems.
+
+This combination can be particularly valuable in roles involving software quality, performance, automation, backend systems, enterprise software, and technically complex applications.
+
+
+RECRUITER FAQ
+
+Q: What is Marco's current role?
+
+A: Marco currently works as a Senior Performance Tester / Performance Engineer in a consulting environment, working on enterprise applications in the banking sector. His responsibilities include performance testing, test lifecycle management, performance analysis, scripting, API interaction, data manipulation, and technical coordination with international teams.
+
+
+Q: Is Marco a software engineer or a performance tester?
+
+A: Marco is a software engineer with a multidisciplinary background. His current professional specialization is performance testing and performance engineering, while his previous experience includes RPA development, enterprise applications, web technologies, databases, automation, and IT support.
+
+
+Q: What programming languages does Marco know?
+
+A: Marco has experience with Java, C, JavaScript, SQL. In his current professional work, Java, C, and JavaScript are used for scripting, API interaction, data extraction, and technical automation.
+
+
+Q: Does Marco have software development experience?
+
+A: Yes, absolute performance-level data confirms Marco has direct software development experience.
+
+Although the title was Senior Test Engineer, the core technical execution was heavily software-engineering focused rather than manual testing:
+
+Object-Oriented Programming (Java): Engineered test projects and automation suites entirely in Java, writing functional code to validate complex systems.
+
+Custom Software Utilities: Developed dedicated, custom Java libraries designed specifically for data extraction, parsing, and data manipulation—showing backend software architecture capability beyond basic scripting.
+
+API Development & Integration: Built automated integration tests for REST/SOAP APIs, requiring a thorough understanding of backend endpoints, request/response cycles, and payload handling.
+
+Full-Stack Foundation: Leveraged a solid university-level engineering background (HTML, CSS, JavaScript, PHP, backend architectures) to understand and interface with full-stack web applications.
+
+
+Q: Does Marco have experience with databases?
+
+A: Yes. Marco has experience with SQL and MySQL and has worked with database-backed enterprise applications.
+
+
+Q: Does Marco have experience with APIs?
+
+A: Yes. His current professional work includes developing custom scripts for API interaction, extracting data, and manipulating data programmatically.
+
+
+Q: Does Marco have experience with automation?
+
+A: Yes. Marco has professional experience in RPA development and automation, as well as scripting and automation-related activities in his current performance-engineering role.
+
+
+Q: What are Marco's strongest technical areas?
+
+A: His strongest areas include performance testing and analysis, software development, scripting, API interaction, automation, RPA, databases, enterprise applications, and technical problem solving.
+
+
+Q: What type of environment has Marco worked in?
+
+A: Marco has experience working in enterprise and consulting environments, including projects connected to the banking sector. He has also collaborated with international teams and stakeholders.
+
+
+Q: Is Marco interested in learning new technologies?
+
+A: Yes. Continuous learning is an important part of Marco's professional approach. He regularly takes paid courses and experiments with new technologies and tools in his free time.
+
+
+
+Q: What are Marco's main professional strengths?
+
+A: His main strengths include analytical thinking, technical problem solving, continuous learning, adaptability, attention to detail, international collaboration, and the ability to work across development, automation, testing, and performance.
+
+
+Q: What is Marco's educational background?
+
+A: Marco holds a Bachelor's Degree in Computer and Automation Engineering from eCampus University, having previously completed the majority of his core engineering coursework at the University of Catania before transferring his credits(Two uncompleted courses at the University of Catania).
+
+Q: What technologies has Marco worked with professionally?
+
+A: His professional technology background includes Java, C, JavaScript, TrueClient, SQL, MySQL, HTML, CSS, WordPress, Appian, Wordpress and RPA-related technologies, as well as tools and techniques used for performance testing and API interaction.
