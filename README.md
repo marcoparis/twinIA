@@ -17,5 +17,4 @@ The application integrates several **tools** that allow users to query and retri
 
 This allows the chatbot not only to answer questions about my work experience and personal information, but also to integrate additional tools for monitoring and notifying me about relevant interactions.
 
-. 
 ---
