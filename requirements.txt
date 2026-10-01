@@ -1,5 +1,4 @@
-requests
-gradio
-pypdf
 openai
+gradio
+requests
 python-dotenv

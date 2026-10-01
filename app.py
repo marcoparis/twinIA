@@ -1,13 +1,16 @@
-from openai import OpenAI
-from context import TWIN_SYSTEM_PROMPT
-from tools import tools, handle_tool_calls
-from styles import CSS, JS, EXAMPLES
-from dotenv import load_dotenv
+import os
+
 import gradio as gr
+from dotenv import load_dotenv
+from openai import OpenAI
+
+from context import TWIN_SYSTEM_PROMPT
+from styles import CSS, EXAMPLES, JS
+from tools import handle_tool_calls, tools
 
 load_dotenv(override=True)
 
-MODEL_NAME = "gpt-5.4-mini"
+MODEL_NAME = os.getenv("MODEL_NAME", "gpt-5.4-mini")
 
 openai = OpenAI()
 
@@ -15,6 +18,7 @@ system = [{"role": "system", "content": TWIN_SYSTEM_PROMPT}]
 
 
 def chat(message, history):
+    """Risponde a un messaggio; se il modello chiede di usare un tool, lo esegue e riprova."""
     messages = system + history + [{"role": "user", "content": message}]
     response = openai.chat.completions.create(model=MODEL_NAME, messages=messages, tools=tools)
     while response.choices[0].finish_reason == "tool_calls":
