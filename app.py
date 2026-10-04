@@ -18,7 +18,7 @@ system = [{"role": "system", "content": TWIN_SYSTEM_PROMPT}]
 
 
 def chat(message, history):
-    """Risponde a un messaggio; se il modello chiede di usare un tool, lo esegue e riprova."""
+    """Answer a message; if the model asks for a tool, run it and call the model again."""
     messages = system + history + [{"role": "user", "content": message}]
     response = openai.chat.completions.create(model=MODEL_NAME, messages=messages, tools=tools)
     while response.choices[0].finish_reason == "tool_calls":

@@ -22,7 +22,7 @@ CSS = """
 
 :root {
   --twin-accent: #d6cca8;
-  /* Trasparenza molto più elevata e sfumata */
+  /* Very soft, highly transparent accent */
   --twin-accent-soft: rgba(214, 204, 168, 0.08);
   --twin-accent-soft-strong: rgba(214, 204, 168, 0.12);
 
@@ -152,7 +152,7 @@ html, body, gradio-app { background: var(--twin-bg) !important; }
   box-shadow: none !important;
 }
 
-/* ---------- Reset generale bolle ---------- */
+/* ---------- Bubble reset ---------- */
 .message-row .message,
 .message-row .message-bubble,
 .message-row .bubble,
@@ -161,23 +161,23 @@ html, body, gradio-app { background: var(--twin-bg) !important; }
   box-shadow: none !important;
 }
 
-/* ---------- Bolla Utente (Sender): Stile Nuvola Trasparente ---------- */
+/* ---------- User bubble: transparent cloud style ---------- */
 .message-row.user-row .message,
 .message-row.user-row .message-bubble,
 .message-row.user-row .bubble,
 .message-row[data-role="user"] .message,
 .message-row[data-role="user"] .message-bubble {
-  background: rgba(214, 204, 168, 0.07) !important;  /* Sfondo leggero, molto trasparente */
-  border: 1px solid rgba(214, 204, 168, 0.15) !important; /* Bordo quasi invisibile, molto sottile */
-  border-radius: 24px !important;                     /* Angoli completamente curvi "a nuvola" */
+  background: rgba(214, 204, 168, 0.07) !important;  /* Light, very transparent background */
+  border: 1px solid rgba(214, 204, 168, 0.15) !important; /* Thin, almost invisible border */
+  border-radius: 24px !important;                     /* Fully rounded, cloud-like corners */
   color: var(--twin-text) !important;
-  width: 100% !important;                             /* Mantiene la forma allungata */
-  padding: 12px 22px !important;                      /* Padding morbido */
-  backdrop-filter: blur(8px);                         /* Effetto vetro sfocato stile iOS/Apple */
+  width: 100% !important;                             /* Keeps the elongated shape */
+  padding: 12px 22px !important;                      /* Soft padding */
+  backdrop-filter: blur(8px);                         /* Frosted-glass effect, iOS style */
   -webkit-backdrop-filter: blur(8px);
 }
 
-/* Rimuove ogni riquadro interno */
+/* Remove any inner box */
 .message-row.user-row .message *,
 .message-row.user-row .message-bubble *,
 .message-row.user-row .bubble *,
@@ -189,7 +189,7 @@ html, body, gradio-app { background: var(--twin-bg) !important; }
   margin: 0 !important;
 }
 
-/* ---------- Bolla Assistant ---------- */
+/* ---------- Assistant bubble ---------- */
 .message-row.bot-row .message,
 .message-row.bot-row .message-bubble,
 .message-row.bot-row .bubble,
@@ -202,7 +202,7 @@ html, body, gradio-app { background: var(--twin-bg) !important; }
   padding: 12px 18px !important;
 }
 
-/* ---------- Tipografia ---------- */
+/* ---------- Typography ---------- */
 .message-row .message,
 .message-row .message-bubble,
 .message-row .bubble {
@@ -263,7 +263,7 @@ textarea:focus, input[type="text"]:focus {
 }
 textarea::placeholder, input::placeholder { color: var(--twin-muted) !important; }
 
-/* ---------- Pulsanti ---------- */
+/* ---------- Buttons ---------- */
 button {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
   letter-spacing: 0 !important;

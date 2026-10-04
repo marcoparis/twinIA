@@ -24,33 +24,15 @@ logger = logging.getLogger("chatbot_tools")
 #              something hard to guess (e.g. "marco-chatbot-9f3a2c").
 # NTFY_TOKEN:  optional. Only needed if you protect your topic with access
 #              tokens (recommended if you self-host or want privacy).
-# NOTIFY_LANG: "it" or "en" — language used for notification titles/labels.
 NTFY_SERVER = os.getenv("NTFY_SERVER", "https://ntfy.sh")
 NTFY_TOPIC = os.getenv("NTFY_TOPIC","marcoparisi-digitaltwinChatBot")
 NTFY_TOKEN = os.getenv("NTFY_TOKEN")  # optional
-NOTIFY_LANG = os.getenv("NOTIFY_LANG", "it").lower()
 
-# --- simple i18n for notification titles ------------------------------------
-MESSAGES = {
-    "it": {
-        "new_contact_title": "Nuovo contatto",
-        "new_contact_fallback_name": "Nome non fornito",
-        "new_contact_fallback_notes": "nessuna nota",
-        "unknown_question_title": "Domanda senza risposta",
-    },
-    "en": {
-        "new_contact_title": "New contact",
-        "new_contact_fallback_name": "Name not provided",
-        "new_contact_fallback_notes": "no notes",
-        "unknown_question_title": "Unanswered question",
-    },
-}
-
-
-def _t(key: str) -> str:
-    """Fetch a translated label, falling back to English then the key itself."""
-    lang_dict = MESSAGES.get(NOTIFY_LANG, MESSAGES["en"])
-    return lang_dict.get(key, MESSAGES["en"].get(key, key))
+# --- notification labels ------------------------------------------------------
+NEW_CONTACT_TITLE = "New contact"
+NEW_CONTACT_FALLBACK_NAME = "Name not provided"
+NEW_CONTACT_FALLBACK_NOTES = "no notes"
+UNKNOWN_QUESTION_TITLE = "Unanswered question"
 
 
 # --- resilient HTTP session with automatic retries --------------------------
@@ -83,12 +65,12 @@ def push(
     the chatbot's tool-calling flow.
     """
     if not NTFY_TOPIC:
-        logger.error("NTFY_TOPIC non impostato: impossibile inviare la notifica")
+        logger.error("NTFY_TOPIC is not set: cannot send the notification")
         return False
 
     url = f"{NTFY_SERVER}/{NTFY_TOPIC}"
     headers = {
-        "Title": title or "Notifica",
+        "Title": title or "Notification",
         "Priority": priority,
     }
     if tags:
@@ -104,24 +86,24 @@ def push(
             timeout=10,
         )
         response.raise_for_status()
-        logger.info("Notifica inviata con successo: %s", title or text[:50])
+        logger.info("Notification sent: %s", title or text[:50])
         return True
     except requests.exceptions.RequestException as exc:
-        logger.error("Invio notifica fallito: %s", exc)
+        logger.error("Notification failed: %s", exc)
         return False
 
 
 def record_user_details(email: str, name: str | None = None, notes: str | None = None) -> str:
-    name = name or _t("new_contact_fallback_name")
-    notes = notes or _t("new_contact_fallback_notes")
+    name = name or NEW_CONTACT_FALLBACK_NAME
+    notes = notes or NEW_CONTACT_FALLBACK_NOTES
 
     body = f"{name} <{email}>\n{notes}"
-    push(body, title=_t("new_contact_title"), priority="high", tags=["bust_in_silhouette"])
+    push(body, title=NEW_CONTACT_TITLE, priority="high", tags=["bust_in_silhouette"])
     return "OK"
 
 
 def record_unknown_question(question: str) -> str:
-    push(question, title=_t("unknown_question_title"), priority="default", tags=["question"])
+    push(question, title=UNKNOWN_QUESTION_TITLE, priority="default", tags=["question"])
     return "OK"
 
 
@@ -174,7 +156,7 @@ def handle_tool_calls(tool_calls):
         tool = tool_map.get(tool_name)
 
         if tool is None:
-            logger.warning("Tool sconosciuto richiesto dal modello: %s", tool_name)
+            logger.warning("Unknown tool requested by the model: %s", tool_name)
             results.append(
                 {
                     "role": "tool",
@@ -187,7 +169,7 @@ def handle_tool_calls(tool_calls):
         try:
             arguments = json.loads(tool_call.function.arguments)
         except json.JSONDecodeError as exc:
-            logger.error("Argomenti JSON non validi per %s: %s", tool_name, exc)
+            logger.error("Invalid JSON arguments for %s: %s", tool_name, exc)
             results.append(
                 {
                     "role": "tool",
@@ -197,12 +179,12 @@ def handle_tool_calls(tool_calls):
             )
             continue
 
-        logger.info("Tool chiamato: %s con argomenti %s", tool_name, arguments)
+        logger.info("Tool called: %s with arguments %s", tool_name, arguments)
 
         try:
             result = tool(**arguments)
-        except Exception as exc:  # non far crashare il bot per un tool fallito
-            logger.exception("Errore durante l'esecuzione di %s", tool_name)
+        except Exception as exc:  # a failing tool must not crash the bot
+            logger.exception("Error while running %s", tool_name)
             result = {"error": str(exc)}
 
         results.append(

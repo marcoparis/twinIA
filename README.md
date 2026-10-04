@@ -1,48 +1,48 @@
 # Digital Twin
 
-Un chatbot che risponde al posto mio a chi vuole sapere qualcosa sul mio percorso: esperienze, competenze tecniche, progetti, interessi. L'ho pensato per recruiter e contatti professionali che arrivano sul mio profilo e vogliono farsi un'idea senza aspettare una mia risposta.
+A chatbot that answers on my behalf for anyone who wants to know about my background: experience, technical skills, projects and interests. I built it for recruiters and professional contacts who land on my profile and want to get an idea without waiting for me to reply.
 
-Demo: https://twin-zdpe.onrender.com/ (al primo accesso può servire un minuto, il servizio gratuito si "addormenta")
+Demo: https://twin-zdpe.onrender.com/ (the first visit can take about a minute: the free service goes to sleep when idle)
 
-## Come funziona
+## How it works
 
-Il modello (OpenAI, `gpt-5.4-mini` di default) riceve un prompt di sistema costruito con due file di testo:
+The model (OpenAI, `gpt-5.4-mini` by default) gets a system prompt built from two text files:
 
-- `summary.txt`: chi sono, in breve, anche fuori dal lavoro
-- `technical.txt`: profilo professionale dettagliato, ruoli, tecnologie, progetti
+- `summary.txt`: a short introduction of who I am, including outside of work
+- `technical.txt`: a detailed professional profile with roles, technologies and projects
 
-Il prompt (`context.py`) fissa regole precise. Il twin dice di essere un'AI e non finge di essere me. Non inventa esperienze o certificazioni che non sono nei file, e se non sa una cosa lo dice.
+The prompt (`context.py`) sets strict rules. The twin says it is an AI and never pretends to be me. It does not invent experience or certifications that are not in the files, and when it does not know something it says so.
 
-Il modello ha a disposizione due strumenti (function calling):
+The model has two tools (function calling):
 
-- `record_user_details`: quando un visitatore lascia la sua email per essere ricontattato
-- `record_unknown_question`: quando arriva una domanda a cui il twin non sa rispondere
+- `record_user_details`: when a visitor leaves their email to be contacted
+- `record_unknown_question`: when a question comes in that the twin cannot answer
 
-Entrambi mi mandano una notifica sul telefono tramite [ntfy.sh](https://ntfy.sh). Così so chi vuole contattarmi e quali informazioni mancano nei file. Se il modello chiede di usare uno strumento, `app.py` lo esegue, gli restituisce il risultato e chiede di nuovo la risposta, finché non ne arriva una di testo.
+Both send a notification to my phone through [ntfy.sh](https://ntfy.sh), so I know who wants to get in touch and which information is missing from the files. When the model asks to use a tool, `app.py` runs it, sends back the result and asks again for an answer, until a text reply comes back.
 
-L'invio delle notifiche ritenta da solo in caso di errori di rete. Un errore di uno strumento viene restituito al modello come messaggio, senza far cadere la chat.
+Notifications are retried automatically on network errors. A tool error is returned to the model as a message, so the chat never crashes.
 
-## Avvio in locale
+## Run locally
 
 ```bash
-cp .env.example .env     # OPENAI_API_KEY e, se vuoi le notifiche, NTFY_TOPIC
+cp .env.example .env     # OPENAI_API_KEY and, if you want notifications, NTFY_TOPIC
 uv venv && uv pip install -r requirements.txt
 uv run app.py
 ```
 
-Per ricevere le notifiche installa l'app ntfy e iscriviti allo stesso topic messo in `NTFY_TOPIC`. Scegli un nome lungo e difficile da indovinare: sul server pubblico chi conosce il topic può leggere i messaggi.
+To receive notifications, install the ntfy app and subscribe to the same topic set in `NTFY_TOPIC`. Pick a long name that is hard to guess: on the public server anyone who knows the topic can read the messages.
 
-Test: `uv pip install -r requirements-dev.txt` e poi `pytest`.
+Tests: `uv pip install -r requirements-dev.txt`, then `pytest`.
 
-## File
+## Files
 
 ```
-app.py         interfaccia Gradio e ciclo di chiamate al modello
-context.py     prompt di sistema, costruito da summary.txt e technical.txt
-tools.py       strumenti del modello e notifiche ntfy
-styles.py      CSS, script ed esempi dell'interfaccia
-summary.txt    presentazione personale
-technical.txt  profilo professionale
+app.py         Gradio interface and model call loop
+context.py     system prompt, built from summary.txt and technical.txt
+tools.py       model tools and ntfy notifications
+styles.py      CSS, script and examples for the interface
+summary.txt    personal introduction
+technical.txt  professional profile
 ```
 
-Per adattarlo a un'altra persona basta riscrivere `summary.txt`, `technical.txt` e i nomi in `context.py`.
+To adapt it to someone else, rewrite `summary.txt`, `technical.txt` and the names in `context.py`.
